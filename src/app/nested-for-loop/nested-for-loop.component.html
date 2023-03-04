@@ -1,0 +1,8 @@
+<p>nested-for-loop works!</p>
+<ul *ngFor="let item of user">
+    <li>{{item.name}}</li>
+    <li>{{item.fname}}</li>
+    <ul *ngFor="let item2 of item.socialAccounts">
+        <li>{{item2}}</li>
+    </ul>
+</ul>

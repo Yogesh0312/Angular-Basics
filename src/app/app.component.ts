@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  data:number = 20;
+
+  updateData(){
+    this.data = Math.floor(Math.random()*10)
+  }
+
+ 
+  
 }

@@ -1,0 +1,14 @@
+<h3>Basic-form Works!</h3>
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    <input type="text" ngModel name="user" placeholder="Enter User Name">
+    <br><br>
+    <input type="email" ngModel name="usermail" placeholder="Enter User Email">
+    <br><br>
+    <input type="tel" ngModel name="usernumber" placeholder="Enter User PhoneNumber">
+    <br><br>
+    <button class="btn btn-outline-primary" >Register Here</button>
+</form>
+
+<h3>{{data.user}}</h3>
+<h3>{{data.usermail}}</h3>
+<h3>{{data.usernumber}}</h3>

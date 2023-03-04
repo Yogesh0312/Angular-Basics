@@ -1,0 +1,13 @@
+<p>event-call works!</p>
+<button (click)="getData('Hello')">Click Me</button>
+<br><br>
+<input type="text" #id1 (keyup)="getData(id1.value)" placeholder="Key Up">
+<br><br>
+<input type="text" #id2 (keydown)="getData(id2.value)" placeholder="Key Down">
+<br><br>
+<input type="text" #id3 (keypress)="getData(id3.value)" placeholder="Key Press">
+<br><br>
+<input type="text" #id4 (input)="getData(id4.value)" placeholder="Input">
+<br><br>
+<h3 (mouseover)="getData('Mouse Over')">Mouse Over</h3>
+<h3 (mouseleave)="getData('Mouse Leave')">Mouse Leave</h3>

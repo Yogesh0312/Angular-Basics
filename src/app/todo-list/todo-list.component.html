@@ -1,0 +1,12 @@
+<p>todo-list works!</p>
+
+<input type="text" placeholder="Enter Text Here" name="todolist" #task>
+<button class="btn btn-primary ms-1" (click)="addtask(task.value)">+</button>
+<br>
+<ul *ngFor="let item of list">
+    <li>
+        {{item.name}}
+        <button class="btn btn-outline-warning btn-sm" (click)="removeTask(item.id)">&#10060;</button>
+    </li>
+
+</ul>
